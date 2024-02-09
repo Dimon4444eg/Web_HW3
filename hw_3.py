@@ -20,5 +20,6 @@ if __name__ == '__main__':
         end = time.time()
         work = end - start
         print(f"time process {work}")
-        print(result)
+        for sublist in result:
+            print(', '.join(map(str, sublist)))
         print("Number of CPUs:", num_cpus)
